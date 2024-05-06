@@ -61,4 +61,23 @@ How to start your project
 cd project-name
 npm run dev
 ```
+<h3>Config .env variables</h2>
+
+Create your configuration file `.env` with your  Credentials
+
+```yaml
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=YOUR_KEY
+CLERK_SECRET_KEY=YOUR_CLERK_KEY
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+
+NEXT_PUBLIC_STREAM_API_KEY=YOUR_KEY
+STREAM_SECRET_KEY=YOUR_SECRET_KEY
+
+NEXT_PUBLIC_BASE_URL=localhost:3000
+```
+ 
+
  
