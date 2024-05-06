@@ -19,7 +19,9 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-![Screenshot 2024-05-06 191148](https://github.com/YadlaMani/Ussop/assets/133841094/4827851f-18c1-4743-a628-561ddac5a861)
+<img src="https://i.imghippo.com/files/O7exX1715004357.png" alt="" border="0">
+<img src="https://i.imghippo.com/files/UFVgA1715004796.png" alt="" border="0">
+
 
 
 </p>
