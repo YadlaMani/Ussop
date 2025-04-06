@@ -1,11 +1,7 @@
-Here’s a detailed README structure based on your request:
-
 ---
-
 # Project Documentation: Ussop
 
 This document provides a comprehensive overview of the Ussop project, including its architecture, implementation, testing procedures, results, references, and usability.
-
 ---
 
 ## 1. Architecture and Detailed Design
@@ -134,5 +130,3 @@ Ussop is a robust and scalable video conferencing platform built with modern web
 - **Future Enhancements**: Add features like chat integration, recording, and analytics.
 
 ---
-
-This README provides a structured overview of the Ussop project, ensuring clarity for developers and stakeholders.
