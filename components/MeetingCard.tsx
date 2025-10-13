@@ -77,7 +77,7 @@ const MeetingCard = ({
             >
               <Image
                 src="/icons/copy.svg"
-                alt="feature"
+                alt="copy link icon"
                 width={20}
                 height={20}
               />
