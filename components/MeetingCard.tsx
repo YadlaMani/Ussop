@@ -60,26 +60,49 @@ const MeetingCard = ({
         </div>
         {!isPreviousMeeting && (
           <div className="flex gap-2">
-            <Button onClick={handleClick} className="rounded bg-blue-1 px-6">
+            {/* Primary Button */}
+            <Button
+              onClick={handleClick}
+              className="
+      group relative rounded px-6 py-3 font-medium text-white
+      bg-gradient-to-b from-blue-500 to-blue-600
+      transition-transform transition-shadow transition-colors duration-300
+      ease-out hover:scale-103 hover:shadow-[0_8px_20px_rgba(59,130,246,0.35)]
+      hover:from-blue-500 hover:to-blue-700 active:scale-97 active:shadow-[0_4px_12px_rgba(59,130,246,0.25)]
+    "
+            >
               {buttonIcon1 && (
-                <Image src={buttonIcon1} alt="feature" width={20} height={20} />
+                <Image
+                  src={buttonIcon1}
+                  alt="feature"
+                  width={20}
+                  height={20}
+                  className="inline-block transition-transform duration-300 ease-out group-hover:translate-y-[-2px] group-hover:scale-110"
+                />
               )}
               &nbsp; {buttonText}
             </Button>
+
+            {/* Copy Button */}
             <Button
               onClick={() => {
                 navigator.clipboard.writeText(link);
-                toast({
-                  title: "Link Copied",
-                });
+                toast({ title: "Link Copied" });
               }}
-              className="bg-dark-4 px-6"
+              className="
+      group relative rounded px-6 py-3 font-medium text-white
+      bg-gray-800
+      transition-transform transition-shadow transition-colors duration-300
+      ease-out hover:scale-103 hover:shadow-[0_8px_20px_rgba(255,255,255,0.15)]
+      hover:bg-gray-700 active:scale-97 active:shadow-[0_4px_12px_rgba(255,255,255,0.1)]
+    "
             >
               <Image
                 src="/icons/copy.svg"
                 alt="feature"
                 width={20}
                 height={20}
+                className="inline-block transition-transform duration-300 ease-out group-hover:translate-y-[-2px] group-hover:scale-110"
               />
               &nbsp; Copy Link
             </Button>
