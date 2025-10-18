@@ -99,7 +99,7 @@ const MeetingCard = ({
             >
               <Image
                 src="/icons/copy.svg"
-                alt="feature"
+                alt="copy link icon"
                 width={20}
                 height={20}
                 className="inline-block transition-transform duration-300 ease-out group-hover:translate-y-[-2px] group-hover:scale-110"
