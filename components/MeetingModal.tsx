@@ -41,10 +41,21 @@ const MeetingModal = ({isOpen,onClose,title,className,children,handleClick,butto
                 }
                 <h1 className={cn('text-3xl font-bold leading-[42px]',className)}>{title}</h1>
                 {children}
-                <Button className='bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0' onClick={handleClick}>
-                    {buttonIcon&&
-                    <Image src={buttonIcon} alt="button-icon" width={13} height={13}/>}&nbsp;
-                    {buttonText||'Schedule Meeting'}
+                <Button 
+                    className='
+                        group relative bg-blue-1 px-6 py-2 font-medium text-white rounded
+                        transition-all duration-300 ease-out
+                        hover:bg-blue-600 hover:shadow-[0_8px_20px_rgba(59,130,246,0.35)]
+                        active:scale-[0.97] active:shadow-[0_4px_12px_rgba(59,130,246,0.25)]
+                        focus-visible:ring-0 focus-visible:ring-offset-0
+                    ' 
+                    onClick={handleClick}
+                >
+                    <span className="inline-flex items-center gap-2 transition-transform duration-300 ease-out group-hover:translate-y-[-1px]">
+                        {buttonIcon&&
+                        <Image src={buttonIcon} alt="button-icon" width={13} height={13}/>}
+                        {buttonText||'Schedule Meeting'}
+                    </span>
                 </Button>
 
             </div>
